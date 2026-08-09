@@ -1,1 +1,27 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#07090c;color:#f5f7f8;font-family:Inter,Arial,sans-serif;line-height:1.55}.nav{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:rgba(5,7,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid #202832}.logo{font-weight:950;color:#fff;text-decoration:none;letter-spacing:1.5px}.logo span{color:#26a9e0}.nav nav{display:flex;gap:25px}.nav nav a,footer a{color:#d6dde2;text-decoration:none}.nav nav a:hover,footer a:hover{color:#39b9ee}.menu{display:none;background:none;border:0;color:white;font-size:28px}.hero{min-height:78vh;padding:90px 7%;display:flex;align-items:center;background:radial-gradient(circle at 75% 30%,#06334a,transparent 34%),linear-gradient(120deg,#07090c,#101923)}.hero-content{max-width:800px}.eyebrow{font-size:12px;letter-spacing:3px;font-weight:900;color:#39b9ee}.hero h1{font-size:clamp(50px,8vw,100px);line-height:.9;margin:18px 0}.hero h1 span{color:#39b9ee}.hero p:not(.eyebrow){font-size:20px;color:#bdc8cf;max-width:650px}.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:13px 21px;border-radius:7px;text-decoration:none;font-weight:850}.primary{background:#119bd3;color:#fff}.ghost{border:1px solid #60717c;color:#fff}.movie-feature{max-width:1250px;margin:auto;padding:95px 7%;display:grid;grid-template-columns:1fr 410px;gap:55px;align-items:center}.movie-feature h2{font-size:clamp(55px,8vw,100px);line-height:.85;margin:12px 0}.movie-feature h3{font-size:23px}.movie-feature p{color:#b9c2c8;font-size:18px}.movie-feature img{width:100%;display:block;border:1px solid #33404a;border-radius:14px;box-shadow:0 25px 80px rgba(0,0,0,.55)}.section{max-width:1250px;margin:auto;padding:90px 7%}.section h2{font-size:44px;margin:8px 0 35px}.team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.team article{padding:28px;border:1px solid #27313a;border-radius:12px;background:#0d1217}.team span{color:#39b9ee;font-weight:900}.team h3{font-size:27px;margin:18px 0 0}.team p{color:#39b9ee;font-size:12px;letter-spacing:2px;font-weight:900}.team small{color:#aeb8be}.dark{max-width:none;background:#0c1116}.grid{max-width:1110px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tile{padding:30px;border:1px solid #28333c;border-radius:12px;background:#111820;min-height:150px}.tile b{color:#fff}.tile p,.youtube p{color:#adb8bf}.youtube{text-align:center}.youtube p{max-width:620px;margin:0 auto 25px}.stories{max-width:1000px}.story{display:flex;justify-content:space-between;gap:20px;padding:22px;margin:14px 0;border:1px solid #27313a;border-radius:10px}.story h3{margin:0}.story p{color:#aeb8be}.story span{color:#39b9ee;font-size:11px;font-weight:900;white-space:nowrap}footer{padding:45px 7%;border-top:1px solid #202832;display:grid;grid-template-columns:1fr 1fr;gap:18px}footer p{color:#89959c;margin-top:6px}.links{display:flex;justify-content:flex-end;gap:20px}footer small{grid-column:1/-1;color:#66727a}.page{max-width:850px;margin:auto;padding:90px 7%}.page h1{font-size:50px}.page h2{margin-top:38px}.page p,.page li{color:#b7c0c5}.form{display:grid;gap:14px}.form input,.form textarea{padding:14px;background:#10161b;border:1px solid #303c45;border-radius:8px;color:white}.form textarea{min-height:170px}.form button{border:0}@media(max-width:800px){.nav nav{display:none}.menu{display:block}.hero{min-height:72vh}.movie-feature,.team,.grid{grid-template-columns:1fr}.movie-feature img{max-width:520px}.story{display:block}.story span{display:inline-block;margin-top:8px}.links{justify-content:flex-start;flex-wrap:wrap}footer{grid-template-columns:1fr}}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #070a0f;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px 10px;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+}
