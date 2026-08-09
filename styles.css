@@ -308,3 +308,16 @@ a {
     cursor: pointer;
   }
 }
+@media (max-width: 768px) {
+  nav a {
+    padding: 12px 0;
+  }
+
+  nav.open {
+    padding: 10px 25px;
+  }
+
+  nav.open a {
+    margin: 0;
+  }
+}
