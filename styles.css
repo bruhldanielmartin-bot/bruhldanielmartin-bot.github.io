@@ -307,4 +307,13 @@ a {
     display: block;
     cursor: pointer;
   }
-} 
+} @media (max-width: 768px) {
+  nav a {
+    padding: 6px 0 !important;
+    margin: 0 !important;
+  }
+
+  nav {
+    padding: 5px 20px !important;
+  }
+}
